@@ -481,9 +481,9 @@ html, body{
   width: 100%;
 }
 
-@media (min-width: 425px) {
+@media (min-width: 325px) {
   .container {
-    max-width: 425px;
+    max-width: 325px;
   }
 }
 
@@ -581,16 +581,16 @@ html, body{
   order: 1;
 }
 
+.col-span-2 {
+  grid-column: span 2 / span 2;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
 
 .col-span-3 {
   grid-column: span 3 / span 3;
-}
-
-.col-span-2 {
-  grid-column: span 2 / span 2;
 }
 
 .m-2 {
@@ -744,16 +744,16 @@ html, body{
   width: 91.666667%;
 }
 
-.w-10\/12 {
-  width: 83.333333%;
-}
-
 .w-7 {
   width: 1.75rem;
 }
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
 }
 
 .min-w-full {
@@ -792,14 +792,6 @@ html, body{
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -967,16 +959,6 @@ html, body{
   background-color: rgb(28 25 23 / var(--tw-bg-opacity));
 }
 
-.bg-slate-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.bg-slate-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -1010,6 +992,10 @@ html, body{
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-4 {
@@ -1428,12 +1414,20 @@ hover\:border-none:hover {
     width: 50%;
   }
 
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:p-0 {
+    padding: 0px;
   }
 
   .md\:py-3 {
@@ -1472,8 +1466,12 @@ hover\:border-none:hover {
   }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 325px) and (max-width: 767px) {
   .mn\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .mn\:p-0 {
+    padding: 0px;
   }
 }
