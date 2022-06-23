@@ -1475,6 +1475,10 @@ hover\:border-none:hover {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .mn\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .mn\:p-0 {
     padding: 0px;
   }
